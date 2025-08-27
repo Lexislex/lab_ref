@@ -67,6 +67,44 @@ os.environ["LAB_REF_DIR"] = "my_refs"
 ref = lab_ref.get_reference("blood_test", "hemoglobin", sex="male", age=25)
 ```
 
+## Установка
+
+Рекомендуемый способ при разработке — editable-режим (из корня репозитория):
+
+```bash
+python -m pip install -e .
+```
+
+Это позволит IDE видеть актуальные docstrings и автодополнение.
+
+Установка в обычном режиме (если вы используете опубликованный дистрибутив):
+
+```bash
+python -m pip install lab_ref
+```
+
+Если в проекте используется виртуальное окружение — убедитесь, что IDE выбрала тот же интерпретатор, куда установлен пакет.
+
+
+### Установка из исходников (клонирование репозитория)
+
+```bash
+# Клонировать репозиторий
+git clone https://github.com/<your-org-or-user>/lab_ref.git
+cd lab_ref
+
+# (опционально) создать и активировать виртуальное окружение
+python -m venv .venv
+. .venv/Scripts/activate  # Windows PowerShell
+
+# Установить пакет в editable-режиме
+python -m pip install -e .
+
+# Проверить установку
+python -c "import lab_ref; print(lab_ref.__version__ if hasattr(lab_ref, '__version__') else 'installed')"
+```
+
+
 ## Формат метаданных справочника
 
 Каждый JSON может содержать верхнеуровневый блок `_info` с названием и описанием справочника. Эти данные используются в `print_reference_report` и `print_test_types_report`.

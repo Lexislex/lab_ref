@@ -90,7 +90,7 @@ python -m pip install lab_ref
 
 ```bash
 # Клонировать репозиторий
-git clone https://github.com/<your-org-or-user>/lab_ref.git
+git clone https://github.com/Lexislex/lab_ref.git
 cd lab_ref
 
 # (опционально) создать и активировать виртуальное окружение

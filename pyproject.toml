@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lab_ref"
+version = "0.1.0"
+description = "Библиотека для работы с референсными значениями лабораторных исследований."
+authors = [
+    { name = "Ваше Имя", email = "your@email.com" }
+]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+addopts = "-ra -q"
+testpaths = ["lab_ref/tests"]

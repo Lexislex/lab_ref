@@ -1,0 +1,59 @@
+{
+  "_info": {
+    "name": "Капиллярная кровь",
+    "description": "Референсные значения для показателей капиллярной крови",
+    "biomaterial_type": "capillary_blood",
+    "collection_method": "Взятие из пальца/мочки уха"
+  },
+  "hemoglobin": {
+    "name_ru": "Гемоглобин",
+    "test_code": "HGB",
+    "male": [
+      {"age_min": 0, "age_max": 1, "min": 105, "max": 135, "unit": "g/L"},
+      {"age_min": 1, "age_max": 18, "min": 115, "max": 155, "unit": "g/L"},
+      {"age_min": 18, "age_max": 150, "min": 125, "max": 165, "unit": "g/L"}
+    ],
+    "female": [
+      {"age_min": 0, "age_max": 1, "min": 105, "max": 135, "unit": "g/L"},
+      {"age_min": 1, "age_max": 18, "min": 110, "max": 150, "unit": "g/L"},
+      {"age_min": 18, "age_max": 150, "min": 115, "max": 145, "unit": "g/L"}
+    ]
+  },
+  "leukocytes": {
+    "name_ru": "Лейкоциты",
+    "test_code": "WBC",
+    "all": [
+      {"age_min": 0, "age_max": 1, "min": 6.5, "max": 19.0, "unit": "10^9/L"},
+      {"age_min": 1, "age_max": 18, "min": 5.5, "max": 13.0, "unit": "10^9/L"},
+      {"age_min": 18, "age_max": 150, "min": 4.5, "max": 10.0, "unit": "10^9/L"}
+    ]
+  },
+  "erythrocytes": {
+    "name_ru": "Эритроциты",
+    "test_code": "RBC",
+    "male": [
+      {"age_min": 0, "age_max": 1, "min": 3.5, "max": 5.5, "unit": "10^12/L"},
+      {"age_min": 1, "age_max": 18, "min": 4.0, "max": 5.5, "unit": "10^12/L"},
+      {"age_min": 18, "age_max": 150, "min": 4.2, "max": 5.8, "unit": "10^12/L"}
+    ],
+    "female": [
+      {"age_min": 0, "age_max": 1, "min": 3.5, "max": 5.5, "unit": "10^12/L"},
+      {"age_min": 1, "age_max": 18, "min": 3.8, "max": 5.2, "unit": "10^12/L"},
+      {"age_min": 18, "age_max": 150, "min": 3.7, "max": 5.0, "unit": "10^12/L"}
+    ]
+  },
+  "hematocrit": {
+    "name_ru": "Гематокрит",
+    "test_code": "HCT",
+    "male": [
+      {"age_min": 0, "age_max": 1, "min": 32, "max": 44, "unit": "%"},
+      {"age_min": 1, "age_max": 18, "min": 35, "max": 47, "unit": "%"},
+      {"age_min": 18, "age_max": 150, "min": 38, "max": 50, "unit": "%"}
+    ],
+    "female": [
+      {"age_min": 0, "age_max": 1, "min": 32, "max": 44, "unit": "%"},
+      {"age_min": 1, "age_max": 18, "min": 33, "max": 45, "unit": "%"},
+      {"age_min": 18, "age_max": 150, "min": 34, "max": 44, "unit": "%"}
+    ]
+  }
+}

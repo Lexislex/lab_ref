@@ -1,0 +1,138 @@
+{
+  "_info": {
+    "name": "Лабораторные исследования",
+    "description": "Определяет состав лабораторных исследований и их связь с биоматериалами",
+    "version": "2.0"
+  },
+  "blood_test": {
+    "name": "Общий анализ крови",
+    "name_ru": "Общий анализ крови",
+    "description": "Базовое исследование крови для оценки общего состояния здоровья",
+    "biomaterials": ["capillary_blood", "venous_blood"],
+    "preferred_biomaterial": "capillary_blood",
+    "tests": [
+      {
+        "test_name": "hemoglobin",
+        "biomaterials": ["capillary_blood", "venous_blood"],
+        "required": true
+      },
+      {
+        "test_name": "leukocytes", 
+        "biomaterials": ["capillary_blood", "venous_blood"],
+        "required": true
+      },
+      {
+        "test_name": "erythrocytes",
+        "biomaterials": ["capillary_blood"],
+        "required": true
+      },
+      {
+        "test_name": "hematocrit",
+        "biomaterials": ["capillary_blood"],
+        "required": false
+      }
+    ]
+  },
+  "blood_biochemistry": {
+    "name": "Биохимический анализ крови",
+    "name_ru": "Биохимический анализ крови",
+    "description": "Исследование биохимических показателей крови",
+    "biomaterials": ["venous_blood"],
+    "preferred_biomaterial": "venous_blood",
+    "tests": [
+      {
+        "test_name": "glucose",
+        "biomaterials": ["venous_blood"],
+        "required": true
+      },
+      {
+        "test_name": "total_protein",
+        "biomaterials": ["venous_blood"],
+        "required": true
+      },
+      {
+        "test_name": "creatinine",
+        "biomaterials": ["venous_blood"],
+        "required": true
+      },
+      {
+        "test_name": "urea",
+        "biomaterials": ["venous_blood"],
+        "required": false
+      }
+    ]
+  },
+  "blood_gas_analysis": {
+    "name": "Газы крови",
+    "name_ru": "Исследование газов крови",
+    "description": "Анализ кислотно-щелочного состояния и газового состава крови",
+    "biomaterials": ["arterial_blood"],
+    "preferred_biomaterial": "arterial_blood",
+    "tests": [
+      {
+        "test_name": "ph",
+        "biomaterials": ["arterial_blood"],
+        "required": true
+      },
+      {
+        "test_name": "pco2",
+        "biomaterials": ["arterial_blood"],
+        "required": true
+      },
+      {
+        "test_name": "po2",
+        "biomaterials": ["arterial_blood"],
+        "required": true
+      },
+      {
+        "test_name": "hco3",
+        "biomaterials": ["arterial_blood"],
+        "required": true
+      },
+      {
+        "test_name": "base_excess",
+        "biomaterials": ["arterial_blood"],
+        "required": false
+      }
+    ]
+  },
+  "urine_analysis": {
+    "name": "Общий анализ мочи",
+    "name_ru": "Общий анализ мочи",
+    "description": "Исследование физико-химических свойств мочи и микроскопии осадка",
+    "biomaterials": ["urine"],
+    "preferred_biomaterial": "urine",
+    "tests": [
+      {
+        "test_name": "protein",
+        "biomaterials": ["urine"],
+        "required": true
+      },
+      {
+        "test_name": "glucose",
+        "biomaterials": ["urine"],
+        "required": true
+      },
+      {
+        "test_name": "leukocytes",
+        "biomaterials": ["urine"],
+        "required": true
+      },
+      {
+        "test_name": "erythrocytes",
+        "biomaterials": ["urine"],
+        "required": true
+      },
+      {
+        "test_name": "specific_gravity",
+        "biomaterials": ["urine"],
+        "required": false
+      },
+      {
+        "test_name": "ph",
+        "biomaterials": ["urine"],
+        "required": false
+      }
+    ]
+  }
+}

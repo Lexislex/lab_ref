@@ -1,0 +1,49 @@
+{
+  "_info": {
+    "name": "Артериальная кровь",
+    "description": "Референсные значения для показателей артериальной крови (газы крови, pH)",
+    "biomaterial_type": "arterial_blood",
+    "collection_method": "Артериальная пункция"
+  },
+  "ph": {
+    "name_ru": "pH крови",
+    "test_code": "pH",
+    "all": [
+      {"age_min": 0, "age_max": 1, "min": 7.35, "max": 7.45, "unit": "pH"},
+      {"age_min": 1, "age_max": 150, "min": 7.35, "max": 7.45, "unit": "pH"}
+    ]
+  },
+  "pco2": {
+    "name_ru": "Парциальное давление CO2",
+    "test_code": "pCO2",
+    "all": [
+      {"age_min": 0, "age_max": 1, "min": 35, "max": 45, "unit": "mmHg"},
+      {"age_min": 1, "age_max": 150, "min": 35, "max": 45, "unit": "mmHg"}
+    ]
+  },
+  "po2": {
+    "name_ru": "Парциальное давление O2",
+    "test_code": "pO2",
+    "all": [
+      {"age_min": 0, "age_max": 1, "min": 80, "max": 100, "unit": "mmHg"},
+      {"age_min": 1, "age_max": 18, "min": 85, "max": 105, "unit": "mmHg"},
+      {"age_min": 18, "age_max": 150, "min": 80, "max": 100, "unit": "mmHg"}
+    ]
+  },
+  "hco3": {
+    "name_ru": "Бикарбонат",
+    "test_code": "HCO3",
+    "all": [
+      {"age_min": 0, "age_max": 1, "min": 22, "max": 26, "unit": "mmol/L"},
+      {"age_min": 1, "age_max": 150, "min": 22, "max": 26, "unit": "mmol/L"}
+    ]
+  },
+  "base_excess": {
+    "name_ru": "Избыток оснований",
+    "test_code": "BE",
+    "all": [
+      {"age_min": 0, "age_max": 1, "min": -2, "max": 2, "unit": "mmol/L"},
+      {"age_min": 1, "age_max": 150, "min": -2, "max": 2, "unit": "mmol/L"}
+    ]
+  }
+}

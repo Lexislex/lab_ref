@@ -1,0 +1,56 @@
+{
+  "_info": {
+    "name": "Моча",
+    "description": "Референсные значения для показателей общего анализа мочи",
+    "biomaterial_type": "urine",
+    "collection_method": "Сбор средней порции утренней мочи"
+  },
+  "protein": {
+    "name_ru": "Белок",
+    "test_code": "PRO",
+    "all": [
+      {"age_min": 0, "age_max": 150, "min": 0, "max": 0.033, "unit": "g/L"}
+    ]
+  },
+  "glucose": {
+    "name_ru": "Глюкоза",
+    "test_code": "GLU",
+    "all": [
+      {"age_min": 0, "age_max": 150, "min": 0, "max": 0.8, "unit": "mmol/L"}
+    ]
+  },
+  "leukocytes": {
+    "name_ru": "Лейкоциты",
+    "test_code": "WBC",
+    "male": [
+      {"age_min": 0, "age_max": 150, "min": 0, "max": 3, "unit": "в п/зр"}
+    ],
+    "female": [
+      {"age_min": 0, "age_max": 150, "min": 0, "max": 6, "unit": "в п/зр"}
+    ]
+  },
+  "erythrocytes": {
+    "name_ru": "Эритроциты",
+    "test_code": "RBC",
+    "male": [
+      {"age_min": 0, "age_max": 150, "min": 0, "max": 1, "unit": "в п/зр"}
+    ],
+    "female": [
+      {"age_min": 0, "age_max": 150, "min": 0, "max": 3, "unit": "в п/зр"}
+    ]
+  },
+  "specific_gravity": {
+    "name_ru": "Удельный вес",
+    "test_code": "SG",
+    "all": [
+      {"age_min": 0, "age_max": 150, "min": 1.003, "max": 1.030, "unit": ""}
+    ]
+  },
+  "ph": {
+    "name_ru": "pH мочи",
+    "test_code": "pH",
+    "all": [
+      {"age_min": 0, "age_max": 150, "min": 4.6, "max": 8.0, "unit": "pH"}
+    ]
+  }
+}

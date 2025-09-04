@@ -1,0 +1,72 @@
+{
+  "_info": {
+    "name": "Венозная кровь",
+    "description": "Референсные значения для показателей венозной крови",
+    "biomaterial_type": "venous_blood",
+    "collection_method": "Венепункция (взятие из вены)"
+  },
+  "hemoglobin": {
+    "name_ru": "Гемоглобин",
+    "test_code": "HGB",
+    "male": [
+      {"age_min": 0, "age_max": 1, "min": 110, "max": 140, "unit": "g/L"},
+      {"age_min": 1, "age_max": 18, "min": 120, "max": 160, "unit": "g/L"},
+      {"age_min": 18, "age_max": 150, "min": 130, "max": 170, "unit": "g/L"}
+    ],
+    "female": [
+      {"age_min": 0, "age_max": 1, "min": 110, "max": 140, "unit": "g/L"},
+      {"age_min": 1, "age_max": 18, "min": 115, "max": 155, "unit": "g/L"},
+      {"age_min": 18, "age_max": 150, "min": 120, "max": 150, "unit": "g/L"}
+    ]
+  },
+  "leukocytes": {
+    "name_ru": "Лейкоциты",
+    "test_code": "WBC",
+    "all": [
+      {"age_min": 0, "age_max": 1, "min": 6.0, "max": 18.0, "unit": "10^9/L"},
+      {"age_min": 1, "age_max": 18, "min": 5.0, "max": 12.0, "unit": "10^9/L"},
+      {"age_min": 18, "age_max": 150, "min": 4.0, "max": 9.0, "unit": "10^9/L"}
+    ]
+  },
+  "glucose": {
+    "name_ru": "Глюкоза",
+    "test_code": "GLU",
+    "all": [
+      {"age_min": 0, "age_max": 1, "min": 2.8, "max": 4.4, "unit": "mmol/L"},
+      {"age_min": 1, "age_max": 18, "min": 3.3, "max": 5.5, "unit": "mmol/L"},
+      {"age_min": 18, "age_max": 150, "min": 3.9, "max": 6.1, "unit": "mmol/L"}
+    ]
+  },
+  "total_protein": {
+    "name_ru": "Общий белок",
+    "test_code": "TP",
+    "all": [
+      {"age_min": 0, "age_max": 1, "min": 46, "max": 73, "unit": "g/L"},
+      {"age_min": 1, "age_max": 18, "min": 60, "max": 80, "unit": "g/L"},
+      {"age_min": 18, "age_max": 150, "min": 64, "max": 84, "unit": "g/L"}
+    ]
+  },
+  "creatinine": {
+    "name_ru": "Креатинин",
+    "test_code": "CREA",
+    "male": [
+      {"age_min": 0, "age_max": 1, "min": 18, "max": 35, "unit": "µmol/L"},
+      {"age_min": 1, "age_max": 18, "min": 27, "max": 62, "unit": "µmol/L"},
+      {"age_min": 18, "age_max": 150, "min": 64, "max": 104, "unit": "µmol/L"}
+    ],
+    "female": [
+      {"age_min": 0, "age_max": 1, "min": 18, "max": 35, "unit": "µmol/L"},
+      {"age_min": 1, "age_max": 18, "min": 27, "max": 62, "unit": "µmol/L"},
+      {"age_min": 18, "age_max": 150, "min": 49, "max": 90, "unit": "µmol/L"}
+    ]
+  },
+  "urea": {
+    "name_ru": "Мочевина",
+    "test_code": "UREA",
+    "all": [
+      {"age_min": 0, "age_max": 1, "min": 1.4, "max": 5.4, "unit": "mmol/L"},
+      {"age_min": 1, "age_max": 18, "min": 1.8, "max": 6.4, "unit": "mmol/L"},
+      {"age_min": 18, "age_max": 150, "min": 2.5, "max": 8.3, "unit": "mmol/L"}
+    ]
+  }
+}

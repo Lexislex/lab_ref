@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lab_ref"
-version = "0.1.0"
+version = "0.1.0a1"
 description = "Библиотека для работы с референсными значениями лабораторных исследований."
 authors = [
     { name = "Ваше Имя", email = "your@email.com" }

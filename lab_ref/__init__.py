@@ -9,6 +9,7 @@
 См. docstrings у функций для подробной справки.
 """
 
+# Функциональный API (основной для простых случаев)
 from .utils import (
     validate_references_structure,
     load_references,
@@ -21,7 +22,17 @@ from .utils import (
     print_test_types_report,
 )
 
+# ООП API (для сложных сценариев и удобства)
+from .models import (
+    AgeRange,
+    Reference,
+    Test,
+    ReferenceManager,
+    LabResult,
+)
+
 __all__ = [
+    # Функциональный API
     "validate_references_structure",
     "load_references",
     "list_test_types",
@@ -31,6 +42,12 @@ __all__ = [
     "print_test_names_report",
     "get_test_keys",
     "print_test_types_report",
+    # ООП API
+    "AgeRange",
+    "Reference",
+    "Test",
+    "ReferenceManager",
+    "LabResult",
 ]
 
 # Помечаем ре-экспортированные функции как принадлежащие модулю `lab_ref`,
